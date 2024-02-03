@@ -28,6 +28,32 @@
         font-size: 80px;
     }
 
+    .electronic-icon {
+        filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%);
+        width: 450px;
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        padding: 0;
+    }
+    
+    .electronic-icon:hover{
+        filter: invert(57%) sepia(55%) saturate(4465%) hue-rotate(226deg) brightness(102%) contrast(101%);
+    }
+
+    .code-icon {
+        filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%);
+        width: 450px;
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        padding: 0;
+    }
+
+    .code-icon:hover {
+        filter: invert(57%) sepia(55%) saturate(4465%) hue-rotate(226deg) brightness(102%) contrast(101%);
+    }
+
     .scroll-down {
         display: grid;
         place-items: center;
@@ -76,7 +102,7 @@
             width: 300px;
         }
 
-        #electronic-icon, #code-icon {
+        .electronic-icon, .code-icon {
             display: none;
         }
 
@@ -117,8 +143,8 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-        <img src="../docs/assets/1710300.svg" id="electronic-icon" style="filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%); width: 450px; position: absolute; left: 10%; top: 40%;">
-        <img src="../docs/assets/1970468.svg" id="code-icon" style="filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%); width: 450px; position: absolute; right: 10%; top: 30%;">
+        <img src="../docs/assets/1710300.svg" class="electronic-icon">
+        <img src="../docs/assets/1970468.svg" class="code-icon">
         <div class="info">
             <h1>Hello! My name is Athanasios Georgalis and i am a developer.</h1>
             <div class="scroll-down">

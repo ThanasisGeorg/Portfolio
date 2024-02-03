@@ -8,6 +8,272 @@
     <script src="https://kit.fontawesome.com/3027224a98.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
+<style>
+    .contact {
+        /* margin: 0 0 30px; */
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: #DCDCDC;
+    }
+    .contact-box{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: #15141B;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 3px solid #DCDCDC;
+    }
+    .contact-box h2{
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+    .contact-box .user-box {
+        position: relative;
+    }
+    .contact-box .user-box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #DCDCDC;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #DCDCDC;
+        outline: none;
+        background: transparent;
+    }
+    .contact-box .user-box textarea{
+        width: 100%;
+        padding: 10px 0px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #DCDCDC;
+        outline: none;
+        background: transparent;
+    }
+    .contact-box .user-box label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #DCDCDC;
+        pointer-events: none;
+        transition: 0.4s;
+    }
+    .contact-box .user-box #msg-label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0px 0px 0px;
+        font-size: 16px;
+        color: #DCDCDC;
+        pointer-events: none;
+        transition: 0.4s;
+    }
+    .contact-box .user-box input:focus~label,
+    .contact-box .user-box input:valid~label{
+        top: -22px;
+        left: 0;
+        color: #61FFCA;
+        font-size: 12px;
+    }
+    .contact-box .user-box textarea:focus~#msg-label,
+    .contact-box .user-box textarea:valid~#msg-label{
+        top: -30px;
+        left: 0;
+        color: #61FFCA;
+        font-size: 12px;
+    }
+    .btn-submit{
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #61FFCA;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.5s;
+        margin-top: 20px;
+        letter-spacing: 4px;
+    }
+    .btn-submit:hover{
+        background-color: #61FFCA;
+        color: rgb(10, 11, 21);
+        border-radius: 5px;
+    }
+    .btn-submit span{
+        position: absolute;
+        display: block;
+    }
+    .btn-submit span:nth-child(1){
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #61FFCA);
+        animation: btn-anim1 1s linear infinite;
+    }
+    @keyframes btn-anim1{
+        0%{
+            left: -100%;
+        }
+        50%,100%{
+            left: 100%;
+        }
+    }
+    .btn-submit span:nth-child(2){
+        top: -100%;
+        right: 0%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #61FFCA);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: 0.25s;
+    }
+    @keyframes btn-anim2{
+        0%{
+            top: -100%;
+        }
+        50%,100%{
+            top: 100%;
+        }
+    }
+    .btn-submit span:nth-child(3){
+        bottom: 0%;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #61FFCA);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+    @keyframes btn-anim3{
+        0%{
+            right: -100%;
+        }
+        50%,100%{
+            right: 100%;
+        }
+    }
+    .btn-submit span:nth-child(4){
+        bottom: -100%;
+        left: 0%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #61FFCA);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: 0.75s;
+    }
+    @keyframes btn-anim4{
+        0%{
+            bottom: -100%;
+        }
+        50%,100%{
+            bottom: 100%;
+        }
+    }
+    .social-items{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        transform: translate(-50%, -50%);
+        background: #15141B;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 3px solid #DCDCDC;
+    }
+    .social-items-cont{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+        align-items: center;
+        list-style: none;
+    }
+    .social-items-cont a{
+        text-decoration: none;
+        color: #DCDCDC;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+        transition: 0.11s;
+    }
+    .success-msg{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        height: 150px;
+        width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        background: #15141b;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 3px solid #DCDCDC;
+        visibility: hidden;
+    }
+    .success-msg-cont{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+        align-items: center;
+        list-style: none;
+    }
+    .success-msg-cont p{
+        text-decoration: none;
+        color: #61FFCA;
+        font-size: 1.2rem;
+    }
+    .success-msg-cont i{
+        position: absolute;
+        top: 50%;
+        color: #61FFCA;
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 425px){
+        .contact-box{
+            width: 290px;
+            padding: 15px;
+            top: 45%;
+        }
+        .contact-box h2{
+            font-size: 20px;
+        }
+        .contact-box .user-box #label{
+            font-size: 14px;
+        }
+        .contact-box .user-box #msg-label{
+            font-size: 14px;
+        }
+        .social-items{
+            width: 290px;
+            top: 85%;
+        }
+        .success-msg{
+            width: 300px;
+            text-align: center;
+        }
+    }
+</style>
 <script>
     function openNavbar(){
         document.getElementById("nav-bar").style.width = "100%";
@@ -15,6 +281,20 @@
 
     function closeNavbar(){
         document.getElementById("nav-bar").style.width = "0%";
+    }
+
+    function checkIfEmpty(){
+        var name_cont=document.forms["contact_form"]["name"].value;
+        var surname_cont=document.forms["contact_form"]["surname"].value;
+        var email_cont=document.forms["contact_form"]["email"].value;
+        var msg_cont=document.forms["contact_form"]["message"].value;
+        if(name_cont=="" || surname_cont=="" || email_cont=="" || msg_cont=="") {
+            alert("Fill all the areas");
+            return;
+        }
+        else{
+            alert("Your message sent");
+        }
     }
 </script>
 <body>
@@ -26,6 +306,48 @@
         <div class="navbar-content">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
+        </div>
+    </div>
+
+    <span class="contact"><h2>Contact</h2></span>
+    <div class="contact-box" id="cont-box">
+        <form name="contact_form" id="cont-form">
+            <div class="user-box">
+                <input type="text" name="name" required="">
+                <label>Name</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="surname" required="">
+                <label>Surname</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="email" required="">
+                <label>Email</label>
+            </div>
+            <div class="user-box">
+                <!--<input type="text" name="message" required="" maxlength="100">-->
+                <textarea name="message" id="message" cols="1" rows="2" required="" maxlength="100"></textarea>
+                <label id="msg-label">Message</label>
+            </div>
+            <a class="btn-submit" href="#" onclick="checkIfEmpty();">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                SEND
+            </a>
+        </form>   
+    </div>
+    <div class="social-items" id="social-itms">
+        <div class="social-items-cont">
+            <li><a href="https://github.com/ThanasisGeorg" target="_blank"><i class="fa-brands fa-github"></i><span> Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/athanasios-georgalis-3a848a23a/" target="_blank"><i class="fa-brands fa-linkedin"></i><span> Linkedin</span></a></li>
+        </div>
+    </div>
+    <div class="success-msg" id="success-msg">
+        <div class="success-msg-cont">
+            <p>Το μήνυμά σας στάλθηκε επιτυχώς</p>
+            <i class="fa-solid fa-circle-check"></i>
         </div>
     </div>
 </body>
