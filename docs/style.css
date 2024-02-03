@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Manjari";
+    /*font-family: “Comic Sans MS”, “Comic Sans”, cursive;*/
+    background: #15141B;
+}
+
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: grid;
+    place-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 45px;
+    color: #DCDCDC;
+    display: block;
+    transition: 0.5s;
+  }
+
+.navbar a:hover, .navbar a:focus {
+    color: #A277FF;
+}
+
+.navbar-content {
+    display: grid;
+    place-items: center;
+}
+
+.navbar-content a {
+    margin: 0.5em;
+}
+
+.navbar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}
+
+#nav-icon {
+    position: fixed;
+    color: #DCDCDC;
+    margin: 32px 0 0 40px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+#nav-icon:hover {
+    color: #A277FF;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: black; 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #DCDCDC;
+    border-radius: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background: #A277FF; 
+  }
+
+@media screen and (max-width: 425px){
+    .navbar-content a {
+        margin: 0% 35% 2% 35%;
+    }
+}
