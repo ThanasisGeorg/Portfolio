@@ -12,9 +12,17 @@
     body {
         background: #15141B;
     }
+
+    .email-icon {
+        position: absolute;
+        top: 20%;
+        left: 5%; 
+        filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%);
+        width: 450px;
+        padding: 0;
+    }
     
     .contact {
-        /* margin: 0 0 30px; */
         position: absolute;
         top: 15%;
         left: 50%;
@@ -22,6 +30,7 @@
         font-size: 30px;
         color: #DCDCDC;
     }
+
     .contact-box{
         position: absolute;
         top: 45%;
@@ -34,15 +43,18 @@
         border-radius: 10px;
         border: 3px solid #DCDCDC;
     }
+
     .contact-box h2{
         margin: 0 0 30px;
         padding: 0;
         color: #fff;
         text-align: center;
     }
+
     .contact-box .user-box {
         position: relative;
     }
+
     .contact-box .user-box input{
         width: 100%;
         padding: 10px 0;
@@ -54,6 +66,7 @@
         outline: none;
         background: transparent;
     }
+
     .contact-box .user-box textarea{
         width: 100%;
         padding: 10px 0px;
@@ -64,6 +77,7 @@
         outline: none;
         background: transparent;
     }
+
     .contact-box .user-box label{
         position: absolute;
         top: 0;
@@ -74,6 +88,7 @@
         pointer-events: none;
         transition: 0.4s;
     }
+
     .contact-box .user-box #msg-label{
         position: absolute;
         top: 0;
@@ -84,6 +99,7 @@
         pointer-events: none;
         transition: 0.4s;
     }
+
     .contact-box .user-box input:focus~label,
     .contact-box .user-box input:valid~label{
         top: -22px;
@@ -91,6 +107,7 @@
         color: #61FFCA;
         font-size: 12px;
     }
+
     .contact-box .user-box textarea:focus~#msg-label,
     .contact-box .user-box textarea:valid~#msg-label{
         top: -30px;
@@ -98,6 +115,7 @@
         color: #61FFCA;
         font-size: 12px;
     }
+
     .btn-submit{
         position: relative;
         display: inline-block;
@@ -111,15 +129,18 @@
         margin-top: 20px;
         letter-spacing: 4px;
     }
+
     .btn-submit:hover{
         background-color: #61FFCA;
         color: rgb(10, 11, 21);
         border-radius: 5px;
     }
+
     .btn-submit span{
         position: absolute;
         display: block;
     }
+
     .btn-submit span:nth-child(1){
         top: 0;
         left: -100%;
@@ -128,7 +149,8 @@
         background: linear-gradient(90deg, transparent, #61FFCA);
         animation: btn-anim1 1s linear infinite;
     }
-    @keyframes btn-anim1{
+
+    @keyframes btn-anim1 {
         0%{
             left: -100%;
         }
@@ -136,7 +158,8 @@
             left: 100%;
         }
     }
-    .btn-submit span:nth-child(2){
+
+    .btn-submit span:nth-child(2) {
         top: -100%;
         right: 0%;
         width: 2px;
@@ -145,6 +168,7 @@
         animation: btn-anim2 1s linear infinite;
         animation-delay: 0.25s;
     }
+
     @keyframes btn-anim2{
         0%{
             top: -100%;
@@ -153,7 +177,8 @@
             top: 100%;
         }
     }
-    .btn-submit span:nth-child(3){
+
+    .btn-submit span:nth-child(3) {
         bottom: 0%;
         right: -100%;
         width: 100%;
@@ -162,6 +187,7 @@
         animation: btn-anim3 1s linear infinite;
         animation-delay: 0.5s;
     }
+
     @keyframes btn-anim3{
         0%{
             right: -100%;
@@ -170,7 +196,8 @@
             right: 100%;
         }
     }
-    .btn-submit span:nth-child(4){
+
+    .btn-submit span:nth-child(4) {
         bottom: -100%;
         left: 0%;
         width: 2px;
@@ -179,7 +206,8 @@
         animation: btn-anim4 1s linear infinite;
         animation-delay: 0.75s;
     }
-    @keyframes btn-anim4{
+
+    @keyframes btn-anim4 {
         0%{
             bottom: -100%;
         }
@@ -187,6 +215,7 @@
             bottom: 100%;
         }
     }
+    
     .social-items{
         position: absolute;
         top: 50%;
@@ -201,19 +230,17 @@
         border-radius: 10px;
         border: 3px solid #DCDCDC;
     }
-    .social-items-cont{
+
+    .social-items-cont {
         width: 100%;
         margin: auto;
-        /* display: flex;
-        justify-content: space-around; */
         display: block;
         padding-top: 20px;
         height: 64px;
-        align-items: center;
-        list-style: none;
     }
 
     .social-items-cont li {
+        list-style: none;
         padding-bottom: 20px;
     }
 
@@ -222,8 +249,18 @@
         color: #DCDCDC;
         font-size: 1.2rem;
         padding: 0.3rem;
-        transition: 0.11s;
+        transition: 0.12s;
     }
+
+    .social-items-cont a:hover {
+        color: #61FFCA;
+    }
+
+    #github, #gmail, #linkedin {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
     .success-msg{
         position: absolute;
         top: 40%;
@@ -240,6 +277,7 @@
         border: 3px solid #DCDCDC;
         visibility: hidden;
     }
+
     .success-msg-cont{
         width: 100%;
         margin: auto;
@@ -249,11 +287,13 @@
         align-items: center;
         list-style: none;
     }
+
     .success-msg-cont p{
         text-decoration: none;
         color: #61FFCA;
         font-size: 1.2rem;
     }
+
     .success-msg-cont i{
         position: absolute;
         top: 50%;
@@ -262,24 +302,52 @@
     }
 
     @media screen and (max-width: 425px){
+        .email-icon {
+            display: none;
+        }
+
+        .contact {
+            font-size: 25px;
+        }
+
         .contact-box{
             width: 290px;
             padding: 15px;
             top: 45%;
         }
+
         .contact-box h2{
             font-size: 20px;
         }
+
         .contact-box .user-box #label{
             font-size: 14px;
         }
+
         .contact-box .user-box #msg-label{
             font-size: 14px;
         }
+
         .social-items{
             width: 290px;
-            top: 85%;
+            height: 190px;
+            top: 130%;
+            left: 50%;
         }
+
+        .social-items-cont li {
+            padding-bottom: 10px;
+        }
+
+        .social-items-cont a {
+            font-size: 15px;
+        }
+
+        #github, #gmail, #linkedin {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
         .success-msg{
             width: 300px;
             text-align: center;
@@ -321,6 +389,9 @@
         </div>
     </div>
 
+    <img src="../docs/assets/33776.svg" class="email-icon">
+    <!-- <img src="../docs/assets/envelope-solid.svg" class="email-icon"> -->
+
     <span class="contact"><h2>Contact me</h2></span>
     <div class="contact-box" id="cont-box">
         <form name="contact_form" id="cont-form">
@@ -351,9 +422,9 @@
         </form>   
         <div class="social-items" id="social-itms">
             <div class="social-items-cont">
-                <li><a href="https://github.com/ThanasisGeorg" target="_blank"><i class="fa-brands fa-github"><span> Github</span></i><spam><br>ThanasisGeorg</spam></a></li>
-                <li><a href="mailto:thanasisgeorg03@gmail.com"><i class="fa-solid fa-envelope"><span> gmail</span></i><span><br>thanasisgeorg03@gmail.com</span></a></li>
-                <li><a href="https://www.linkedin.com/in/athanasios-georgalis-3a848a23a/" target="_blank"><i class="fa-brands fa-linkedin"><span> Linkedin</span></i><span><br>Athanasios Georgalis</span></a></li>
+                <li><a href="https://github.com/ThanasisGeorg" target="_blank"><i class="fa-brands fa-github"></i><span id="github"> Github</span><span><br>ThanasisGeorg</span></a></li>
+                <li><a href="mailto:thanasisgeorg03@gmail.com"><i class="fa-solid fa-envelope"></i><span id="gmail"> Gmail</span><span><br>thanasisgeorg03@gmail.com</span></a></li>
+                <li><a href="https://www.linkedin.com/in/athanasios-georgalis-3a848a23a/" target="_blank"><i class="fa-brands fa-linkedin"></i><span id="linkedin"> Linkedin</span><span><br>Athanasios Georgalis</span></a></li>
             </div>
         </div>
     </div>
