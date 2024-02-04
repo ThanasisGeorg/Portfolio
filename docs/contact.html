@@ -9,6 +9,10 @@
     <title>Contact</title>
 </head>
 <style>
+    body {
+        background: #15141B;
+    }
+    
     .contact {
         /* margin: 0 0 30px; */
         position: absolute;
@@ -22,7 +26,7 @@
         position: absolute;
         top: 45%;
         left: 50%;
-        width: 400px;
+        width: 550px;
         padding: 40px;
         transform: translate(-50%, -50%);
         background: #15141B;
@@ -185,9 +189,10 @@
     }
     .social-items{
         position: absolute;
-        top: 85%;
-        left: 50%;
-        width: 400px;
+        top: 50%;
+        right: -90%;
+        width: 300px;
+        height: 442px;
         padding-left: 20px;
         padding-right: 20px;
         transform: translate(-50%, -50%);
@@ -199,12 +204,19 @@
     .social-items-cont{
         width: 100%;
         margin: auto;
-        display: flex;
-        justify-content: space-around;
+        /* display: flex;
+        justify-content: space-around; */
+        display: block;
+        padding-top: 20px;
         height: 64px;
         align-items: center;
         list-style: none;
     }
+
+    .social-items-cont li {
+        padding-bottom: 20px;
+    }
+
     .social-items-cont a{
         text-decoration: none;
         color: #DCDCDC;
@@ -309,7 +321,7 @@
         </div>
     </div>
 
-    <span class="contact"><h2>Contact</h2></span>
+    <span class="contact"><h2>Contact me</h2></span>
     <div class="contact-box" id="cont-box">
         <form name="contact_form" id="cont-form">
             <div class="user-box">
@@ -337,18 +349,19 @@
                 SEND
             </a>
         </form>   
-    </div>
-    <div class="social-items" id="social-itms">
-        <div class="social-items-cont">
-            <li><a href="https://github.com/ThanasisGeorg" target="_blank"><i class="fa-brands fa-github"></i><span> Github</span></a></li>
-            <li><a href="https://www.linkedin.com/in/athanasios-georgalis-3a848a23a/" target="_blank"><i class="fa-brands fa-linkedin"></i><span> Linkedin</span></a></li>
+        <div class="social-items" id="social-itms">
+            <div class="social-items-cont">
+                <li><a href="https://github.com/ThanasisGeorg" target="_blank"><i class="fa-brands fa-github"><span> Github</span></i><spam><br>ThanasisGeorg</spam></a></li>
+                <li><a href="mailto:thanasisgeorg03@gmail.com"><i class="fa-solid fa-envelope"><span> gmail</span></i><span><br>thanasisgeorg03@gmail.com</span></a></li>
+                <li><a href="https://www.linkedin.com/in/athanasios-georgalis-3a848a23a/" target="_blank"><i class="fa-brands fa-linkedin"><span> Linkedin</span></i><span><br>Athanasios Georgalis</span></a></li>
+            </div>
         </div>
     </div>
-    <div class="success-msg" id="success-msg">
+    <!-- <div class="success-msg" id="success-msg">
         <div class="success-msg-cont">
             <p>Το μήνυμά σας στάλθηκε επιτυχώς</p>
             <i class="fa-solid fa-circle-check"></i>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
