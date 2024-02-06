@@ -4,139 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/shared/navbar.css">
+    <link rel="stylesheet" href="./css/home.css">
     <script src="https://kit.fontawesome.com/3027224a98.js" crossorigin="anonymous"></script>
     <title>ThanasisGeorg</title>
 </head>
-<style>
-    body {
-        background: #2c2c32;
-    }
-
-    header {
-        height: 100vh;
-        background: #15141B;
-        color: white;
-    }
-
-    .info {
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #61FFCA;
-    }
-
-    .info h1 {
-        padding-bottom: 3%;
-        font-size: 80px;
-    }
-
-    .electronic-icon {
-        filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%);
-        width: 450px;
-        position: absolute;
-        left: 10%;
-        top: 40%;
-        padding: 0;
-    }
-    
-    .electronic-icon:hover{
-        filter: invert(57%) sepia(55%) saturate(4465%) hue-rotate(226deg) brightness(102%) contrast(101%);
-    }
-
-    .code-icon {
-        filter: invert(48%) sepia(0%) saturate(2762%) hue-rotate(341deg) brightness(85%) contrast(79%);
-        width: 450px;
-        position: absolute;
-        right: 10%;
-        top: 30%;
-        padding: 0;
-    }
-
-    .code-icon:hover {
-        filter: invert(57%) sepia(55%) saturate(4465%) hue-rotate(226deg) brightness(102%) contrast(101%);
-    }
-
-    .scroll-down {
-        display: grid;
-        place-items: center;
-    }
-
-    .scroll-down a {
-        font-size: 35px;
-        color: #DCDCDC;
-        transition: 0.5s;
-    }
-
-    .scroll-down a:hover {
-        color: #A277FF;
-    }
-
-    .about {
-        margin-top: 100vh;
-    }
-
-    .about-cont{
-        position: absolute;
-        top: 140%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 70%;
-        color: #DCDCDC;
-    }
-
-    .about-cont h1 {
-        font-size: 65px;
-        color: #A277FF;
-    }
-
-    .about-cont p {
-        font-size: 35px;
-    }
-
-    .about-cont span {
-        font-size: 35px;
-        color: #A277FF;
-    }
-
-    @media screen and (max-width: 425px){
-        .info h1 {
-            font-size: 45px;
-            width: 300px;
-        }
-
-        .electronic-icon, .code-icon {
-            display: none;
-        }
-
-        .about-cont {
-            top: 150%;
-        }
-
-        .about-cont h1 {
-            font-size: 40px;
-        }
-
-        .about-cont p {
-        font-size: 25px;
-        }
-
-        .about-cont span {
-            font-size: 30px;
-            color: #A277FF;
-        }
-    }
-</style>
-<script>
-    function openNavbar(){
-        document.getElementById("nav-bar").style.width = "100%";
-    }
-
-    function closeNavbar(){
-        document.getElementById("nav-bar").style.width = "0%";
-    }
-</script>
 <body>  
     <header>
         <span><i id="nav-icon" class="fa-solid fa-bars" style="cursor: pointer;" onclick="openNavbar()"></i></span>
@@ -163,6 +35,7 @@
                 with my PC, but i had never been involded in coding. Things changed when i get myself at the university. Through it, i discovered a whole new fascinating world and learned a new
                 art, <span>the art of Code</span>.</p>
         </div>
-    </div> 
+    </div>
+    <script src="./scripts/shared/navbar.js"></script> 
 </body>
 </html>
