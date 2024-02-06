@@ -1,8 +1,9 @@
 emailjs.init('CJRXtqvj9zUEw2_Y9');
 
 function check_if_empty(element_name){
-    var obj = document.forms["contact_form"][element_name].value;
-    if(obj.value == ""){
+    var obj = document.forms["contact_form"][element_name];
+    if(obj == ""){
+        window.alert("Fill all cells")
         return false;
     }
     
@@ -12,7 +13,7 @@ function check_if_empty(element_name){
 function check_message(){
     var message = document.forms["contact_form"]["message"].value;
 
-    if(message.value == ""){
+    if(message == ""){
         message.innerHTML = "The message is empty"
         return false;
     } else if(String(message).length > 100){
@@ -33,8 +34,10 @@ function send(){
         emailjs.sendForm('service_wwzd3vz', 'template_ltgep5g', document.getElementById("cont-form"))
                         .then(function() {
                             console.log('SUCCESS!');
+                            window.alert("Message sent");
                         }, function(error) {
                             console.log('FAILED...', error);
+                            window.alert("Something went wrong");
                         });
     }
 }
