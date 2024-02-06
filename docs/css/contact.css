@@ -13,7 +13,7 @@ body {
 
 .contact {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -211,7 +211,7 @@ body {
     top: 50%;
     right: -90%;
     width: 300px;
-    height: 442px;
+    height: 562px;
     padding-left: 20px;
     padding-right: 20px;
     transform: translate(-50%, -50%);
