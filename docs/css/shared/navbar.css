@@ -7,11 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+/*body{
     font-family: "Manjari";
     /*font-family: “Comic Sans MS”, “Comic Sans”, cursive;*/
-    /* background: #15141B; */
-}
+    /* background: #15141B; 
+} */
 
 .navbar {
     height: 100%;

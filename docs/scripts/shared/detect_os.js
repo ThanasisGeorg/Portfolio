@@ -1,22 +1,7 @@
-function detectOS() {
-	let userAgent = window.navigator.userAgent,
-		platform = window.navigator.platform,
-		windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-		os = null;
+let userAgent = window.navigator.userAgent;
 
-	if (windowsPlatforms.indexOf(platform) !== -1) {
-		os = 'Windows';
-	} else if (!os && /Linux/.test(platform)) {
-		os = 'Linux';
-	}
-
-	return os;
+if (userAgent.indexOf("Win") !== -1) {
+	document.body.style.fontFamily = "Liberation Sans"
+} else if (userAgent.indexOf("Linux") != -1) {
+	document.body.style.fontFamily = "Manjari"
 }
-
-let os = detectOS();
-
-// if (os == 'Windows') {
-//     $(body).css('font-family', '"Liberation Sans"')
-// } else if (os == 'Linux') {
-//     $(body).css('font-family', '"Manjari"')
-// }
