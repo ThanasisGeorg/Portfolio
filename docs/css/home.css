@@ -96,8 +96,11 @@ header {
 }
 
 @media screen and (max-width: 425px){
+    .info {
+        left: 52%;
+    }
     .info h1 {
-        font-size: 45px;
+        font-size: 40px;
         width: 300px;
     }
 
@@ -106,7 +109,8 @@ header {
     }
 
     .about-cont {
-        top: 150%;
+        top: 155%;
+        left: 55%;
     }
 
     .about-cont h1 {
@@ -120,5 +124,14 @@ header {
     .about-cont span {
         font-size: 30px;
         color: #A277FF;
+    }
+
+    .skills {
+        font-size: 45px;
+        display: block;
+    }
+
+    .skills i {
+        margin: 1% 1% 1% 1%;
     }
 }
