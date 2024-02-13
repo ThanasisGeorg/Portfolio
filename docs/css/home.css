@@ -151,7 +151,7 @@ header {
     }
 
     .about-cont {
-        top: 162%;
+        top: 170%;
         left: 55%;
     }
 
@@ -160,11 +160,11 @@ header {
     }
 
     .about-cont p {
-    font-size: 25px;
+    font-size: 20px;
     }
 
     .about-cont span {
-        font-size: 30px;
+        font-size: 25px;
         color: #A277FF;
     }
 
