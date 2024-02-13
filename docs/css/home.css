@@ -133,5 +133,48 @@ header {
 
     .skills i {
         margin: 1% 1% 1% 1%;
+        margin-bottom: 6%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .info {
+        left: 52%;
+    }
+    .info h1 {
+        font-size: 45px;
+        width: 300px;
+    }
+
+    .electronic-icon, .code-icon {
+        display: none;
+    }
+
+    .about-cont {
+        top: 162%;
+        left: 55%;
+    }
+
+    .about-cont h1 {
+        font-size: 40px;
+    }
+
+    .about-cont p {
+    font-size: 25px;
+    }
+
+    .about-cont span {
+        font-size: 30px;
+        color: #A277FF;
+    }
+
+    .skills {
+        font-size: 37px;
+        display: block;
+        margin-bottom: 6%;
+    }
+
+    .skills i {
+        margin: 1% 1% 1% 1%;
     }
 }

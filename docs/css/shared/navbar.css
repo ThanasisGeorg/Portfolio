@@ -86,9 +86,3 @@ html {
   ::-webkit-scrollbar-thumb:hover{
     background: #A277FF; 
   }
-
-@media screen and (max-width: 425px){
-    .navbar-content a {
-        margin: 0% 35% 2% 35%;
-    }
-}

@@ -297,7 +297,7 @@ body {
     }
 
     .contact {
-        font-size: 25px;
+        font-size: 19px;
     }
 
     .contact-box{
@@ -320,6 +320,59 @@ body {
 
     .social-items{
         width: 290px;
+        height: 190px;
+        top: 130%;
+        left: 50%;
+    }
+
+    .social-items-cont li {
+        padding-bottom: 10px;
+    }
+
+    .social-items-cont a {
+        font-size: 15px;
+    }
+
+    #github, #gmail, #linkedin {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .success-msg{
+        width: 300px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .email-icon {
+        display: none;
+    }
+
+    .contact {
+        font-size: 15px;
+    }
+
+    .contact-box{
+        width: 250px;
+        padding: 15px;
+        top: 40%;
+    }
+
+    .contact-box h2{
+        font-size: 20px;
+    }
+
+    .contact-box .user-box #label{
+        font-size: 14px;
+    }
+
+    .contact-box .user-box #msg-label{
+        font-size: 14px;
+    }
+
+    .social-items{
+        width: 250px;
         height: 190px;
         top: 130%;
         left: 50%;

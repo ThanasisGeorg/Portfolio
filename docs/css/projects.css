@@ -52,8 +52,8 @@ body {
 }
 
 @media screen and (max-width: 425px){
-    .projects_title {
-        font-size: 25px;
+   .projects_title {
+        font-size: 20px;
     }
 
     .projects {
@@ -64,10 +64,33 @@ body {
     }
 
     .project_box {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 2%;
     }
 
     .functionalities {
-        font-size: 16px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .projects_title {
+        font-size: 15px;
+    }
+
+    .projects {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        margin: 20% 10% 2% 18%;
+    }
+
+    .project_box {
+        font-size: 14px;
+        padding: 2%;
+    }
+
+    .functionalities {
+        font-size: 12px;
     }
 }
