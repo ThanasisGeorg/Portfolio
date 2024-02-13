@@ -95,7 +95,7 @@ header {
     font-size: 55px;
 }
 
-@media screen and (max-width: 425px){
+/* @media screen and (max-width: 425px){
     .info {
         left: 52%;
     }
@@ -135,9 +135,9 @@ header {
         margin: 1% 1% 1% 1%;
         margin-bottom: 6%;
     }
-}
+} */
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 550px){
     .info {
         left: 52%;
     }
